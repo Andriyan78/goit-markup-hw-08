@@ -1,0 +1,35 @@
+.custom {
+    display: flex;
+    justify-content: space-between;
+&__icon:hover,
+&__icon:focus:focus {
+    border: 1px solid var(--btnbg-color);
+}
+
+&__icon:hover,
+&__icon:focus {
+    fill: var(--btnbg-color);
+}
+}
+
+.custom__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+
+}
+
+.custom__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    fill: var(--icon-color);
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    transition: fill var(--timing-function), border-color var(--timing-function);
+}
+

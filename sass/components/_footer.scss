@@ -1,0 +1,154 @@
+.foot {
+    background-color: var(--footbcg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address {
+    max-width: 231px;
+    &__foot {
+            margin-top: 20px;
+        }
+    
+                &__item--cityadr {
+            width: 231px;
+            font-style: normal;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+            color: var(--btnlet-color);
+            transition: color var(--timing-function);
+        }
+    
+                &__item--contactmail,
+                &__item--contacttel {
+            font-style: normal;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+            transition: color var(--timing-function);
+        }
+    
+                &__item--mail,
+                &__item--cityadr {
+            margin-bottom: 10px;
+        }
+    
+                &__item--cityadr:hover,
+                &__item--cityadr:focus {
+            color: var(--btnbg-color);
+        }
+    
+                &__item--contactmail:hover,
+                &__item--contactmail:focus {
+            color: var(--btnbg-color);
+    
+        }
+    
+                &__item--contacttel:hover,
+                &__item--contacttel:focus {
+            color: var(--btnbg-color);
+        }
+}
+
+.adr {
+    margin-right: 70px;
+}
+
+
+
+.footmedia,
+.subscribe {
+    color: var(--btnlet-color);
+}
+
+.icon__foot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: var(--btnlet-color);
+    cursor: pointer;
+    transition: background-color var(--timing-function);
+}
+
+.icon__foot:hover,
+.icon__foot:focus {
+    background-color: var(--btnbg-color);
+}
+
+.title__features--foot,
+.subscription__head {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    color: var(--btnlet-color);
+}
+
+.socialmedia__foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 206px;
+}
+
+.subscribe {
+
+    margin-left: auto;
+}
+
+.subscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+&__label {
+    margin-right: 12px;
+}
+
+&__input {
+    display: block;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    outline: none;
+}
+
+&__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--btnlet-color);
+    background-color: var(--btnbg-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}
+}

@@ -1,0 +1,21 @@
+.features{
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+.features &__item{
+    width: 270px;
+}
+&__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;    
+    background-color: var(--filter-color);
+    margin-bottom: var(--card-set-gap);
+}
+}

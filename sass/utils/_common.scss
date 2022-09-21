@@ -1,0 +1,59 @@
+.page {
+    background-color: var(--btnlet-color);
+    color: var(--color-text);
+    font-family: var(--main-font);
+    font-weight: 400;
+    margin: 0;
+}
+
+/* reset */
+.link {
+    display: inline-block;
+    text-decoration: none;
+    color: currentColor;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 15px;
+}
+
+textarea {
+    resize: none;
+}

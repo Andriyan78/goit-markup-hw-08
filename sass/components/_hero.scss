@@ -1,0 +1,71 @@
+/* Секція героя - шапка */
+.hero {
+    max-width: 1600px;
+    height: 636px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right, 
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0)),
+        url(../images/Img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+&__title {
+    width: 690px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/40);
+    color: var(--btnlet-color);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--card-set-gap);
+}
+&__button{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);  
+    letter-spacing: 0.06em;
+    background-color: var(--btnbg-color);
+    color: var(--btnlet-color);
+    cursor: pointer;
+    min-width: 160px;
+    padding: 10px 20px;
+    min-height: 30px;
+    /* width: 160px; */
+    border-radius: var(--btn-radius);
+    border: none;
+    transition: background-color var(--timing-function), box-shadow 250ms var(--timing-function);
+}
+&__button:hover,
+&__button:focus{
+    background-color: #188ce8;    
+}
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: visibility var(--timing-function), 
+    opacity var(--timing-function);
+
+&.is-hidden{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    
+}
+&.is-hidden.modal{
+    transform: translate(-50%, -50%);
+}
+}

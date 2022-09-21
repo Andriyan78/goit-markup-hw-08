@@ -1,0 +1,27 @@
+.do {
+    display: flex;
+    gap: 30px;
+
+
+&__products {
+    position: relative;
+}
+}
+.product__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16.41/14);
+    letter-spacing: 0.03em;
+}
+
+.product__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--btnlet-color);
+}

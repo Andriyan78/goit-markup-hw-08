@@ -1,0 +1,40 @@
+/* Секції */
+.team__section, .section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.do__section{
+    padding-bottom: 94px;
+}
+.teamcard__title,
+.features__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    color: var(--h-color);
+    margin-bottom: 10px;
+}
+
+.teamcard__title {
+    font-size: 16px;
+}
+
+.features__title,
+.hero__title,
+.title__features--foot,
+.subscription__head,
+.product__title {
+    text-transform: uppercase;
+}
+
+.team__title,
+.do__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--h-color);
+    margin-bottom: 50px;
+}
