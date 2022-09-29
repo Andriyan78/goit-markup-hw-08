@@ -2,14 +2,19 @@
     font-size: 14px;
     line-height: calc(24/14);
     letter-spacing: 0.03em;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-
-.features &__item{
+   
+    @media screen and (min-width:320px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px; 
+    }
+        
+    }   
+.features__item{
     width: 270px;
 }
-&__icon{
+.features__icon{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,5 +22,4 @@
     height: 120px;    
     background-color: var(--filter-color);
     margin-bottom: var(--card-set-gap);
-}
 }

@@ -1,23 +1,26 @@
 /* Секція героя - шапка */
 .hero {
+   
     max-width: 1600px;
     height: 636px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(
         to right, 
         rgba(47, 48, 58, 0.4), 
         rgba(47, 48, 58, 0)),
-        url(../images/Img.jpg);
+        url(../images/header1200.jpg);
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-
-&__title {
-    width: 690px;
+}
+   
+.hero__title {
+    max-width: 690px;
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60/40);
@@ -26,7 +29,7 @@
     margin-right: auto;
     margin-bottom: var(--card-set-gap);
 }
-&__button{
+.hero__button{
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -43,11 +46,11 @@
     border: none;
     transition: background-color var(--timing-function), box-shadow 250ms var(--timing-function);
 }
-&__button:hover,
-&__button:focus{
+.hero__button:hover,
+.hero__button:focus{
     background-color: #188ce8;    
 }
-}
+
 .backdrop{
     position: fixed;
     top: 0;
