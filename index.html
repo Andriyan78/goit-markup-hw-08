@@ -199,7 +199,8 @@
         <ul class="do list">
           <li class="do__item">
             <div class="do__products">
-              <img src="./images/img1.jpg" width="370" alt="soft development"/>
+              <img srcset="images/img1d.jpg 1x, images/img1d@2x.jpg 2x" 
+              src="./images/img1d.jpg"  alt="soft development"/>
             <div class="product__name">
             <p class="product__title">
               desktop apps
@@ -209,7 +210,8 @@
           </li>
           <li class="do__item">
             <div class="do__products">
-              <img src="./images/img2.jpg" width="370" alt="mobile soft testing"/>
+              <img srcset="images/img2d.jpg 1x, images/img2d@2x.jpg 2x"
+              src="./images/img2.jpg" alt="mobile soft testing"/>
             
             <div class="product__name">
             <p class="product__title">
@@ -220,7 +222,8 @@
           </li>
           <li class="do__item">
             <div class="do__products">
-              <img src="./images/img3.jpg" width="370" alt="working with color palette"/>
+              <img srcset="images/img3d.jpg 1x, images/img3d@2x.png 2x"
+              src="./images/img3.jpg" alt="working with color palette"/>
             
           <div class="product__name">
             <p class="product__title">
@@ -239,7 +242,28 @@
           <h2 class="team__title">Our Team</h2>
         <ul class="team">
           <li class="item__team list">
-            <img src="./images/img4.jpg" alt="Игорь Демьяненко Product Designer"/>
+            <picture>
+              <source              
+              srcset="./images/img4d.jpg 1x, 
+                      ./images/img4d@2x.jpg 2x" 
+                      media="(min-width: 1200px)" 
+                      type="image/jpg"/>
+              
+              <source              
+              srcset="./images/img4t.jpg 1x, 
+                      ./images/img4t@2x.jpg 2x" 
+                      media="(min-width: 768px)" 
+                      type="image/jpg"/>              
+              
+              <source             
+              srcset="./images/img4m.jpg 1x, 
+                      ./images/img4m@2x.jpg 2x" 
+                      media="(max-width: 769px)" 
+                      type="image/jpg"/>
+            <img src="./images/img4m.jpg 1x, ./images/img4m@2x.jpg 2x" 
+            alt="Игорь Демьяненко Product Designer"/>
+            </picture>
+            
             <div class="teamcard">
               <h3 class="teamcard__title">Игорь Демьяненко</h3>
             <p class="teamcard__profession">Product Designer</p> 
@@ -283,7 +307,26 @@
             </div>
           </li>
           <li class="item__team list">
-            <img src="./images/img5.jpg" alt="Ольга Репина Frontend Developer"/>
+            <picture>
+              <source              
+              srcset="./images/img5d.jpg 1x, 
+                      ./images/img5d@2x.jpg 2x" 
+                      media="(min-width: 1200px)" 
+                      type="image/jpg"/>
+              
+              <source              
+              srcset="./images/img5t.jpg 1x, 
+                      ./images/img5t@2x.jpg 2x" 
+                      media="(min-width: 768px)" 
+                      type="image/jpg"/>              
+              
+              <source             
+              srcset="./images/img5m.jpg 1x, 
+                      ./images/img5m@2x.jpg 2x" 
+                      media="(max-width: 769px)" 
+                      type="image/jpg"/>
+            <img src="./images/img5m.jpg 1x, ./images/img5m@2x.jpg 2x" alt="Ольга Репина Frontend Developer"/>
+            </picture>
             <div class="teamcard">
               <h3 class="teamcard__title">Ольга Репина</h3>
             <p class="teamcard__profession">Frontend Developer</p> 
@@ -326,7 +369,26 @@
             </div>
           </li>
           <li class="item__team list">
-            <img src="./images/img6.jpg" alt="Николай Тарасов Marketing"/>
+            <picture>
+              <source              
+              srcset="./images/img6d.jpg 1x, 
+                      ./images/img6d@2x.jpg 2x" 
+                      media="(min-width: 1200px)" 
+                      type="image/jpg"/>
+              
+              <source              
+              srcset="./images/img6t.jpg 1x, 
+                      ./images/img6t@2x.jpg 2x" 
+                      media="(min-width: 768px)" 
+                      type="image/jpg"/>              
+              
+              <source             
+              srcset="./images/img6m.jpg 1x, 
+                      ./images/img6m@2x.jpg 2x" 
+                      media="(max-width: 769px)" 
+                      type="image/jpg"/>
+            <img src="./images/img6m.jpg 1x, ./images/img6m@2x.jpg 2x " alt="Николай Тарасов Marketing"/>
+            </picture>
             <div class="teamcard">
               <h3 class="teamcard__title">Николай Тарасов</h3>
             <p class="teamcard__profession">Marketing</p> 
@@ -369,7 +431,26 @@
             </div>
           </li>
           <li class="item__team list">
-            <img src="./images/img7.jpg" alt="Михаил Ермаков UI Designer"/>
+            <picture>
+              <source              
+              srcset="./images/img7d.jpg 1x, 
+                      ./images/img7d@2x.jpg 2x" 
+                      media="(min-width: 1200px)" 
+                      type="image/jpg"/>
+              
+              <source              
+              srcset="./images/img7t.jpg 1x, 
+                      ./images/img7t@2x.jpg 2x" 
+                      media="(min-width: 768px)" 
+                      type="image/jpg"/>              
+              
+              <source             
+              srcset="./images/img7m.jpg 1x, 
+                      ./images/img7m@2x.jpg 2x" 
+                      media="(max-width: 769px)" 
+                      type="image/jpg"/>
+            <img src="./images/img7m.jpg 1x, ./images/img7m@2x.jpg 2x" alt="Михаил Ермаков UI Designer"/>
+            </picture>
             <div class="teamcard">
               <h3 class="teamcard__title">Михаил Ермаков</h3>
             <p class="teamcard__profession">UI Designer</p> 
