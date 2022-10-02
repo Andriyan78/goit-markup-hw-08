@@ -5,6 +5,7 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;  
+   
 &__accent{
     color: var(--h-color)
 }
@@ -13,9 +14,16 @@
 }
 }
 .main-nav{
+    position: relative;
     display: flex;
     align-items: center;
-}
+    &_item{
+        @media screen and (max-width: 767px) {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+    }}
 .nav-link.logo{
     padding-top: 24px;
     padding-bottom: 24px;
@@ -23,6 +31,9 @@
 }
 .nav{
     margin-left: 93px;
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
 }
 .site-nav{
     font-weight: 500;
@@ -46,12 +57,18 @@
 .contacts{
     display: flex;
     gap: 50px;
-    align-items: center;
-    /* margin-left: 340px; */
+    align-items: center;   
     margin-left: auto;
-    @media screen and (min-width: 320px), (max-width:1200px) {
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+    @media screen and (max-width:1199px) {
         flex-wrap: wrap;
+        gap: 0;
+        flex-direction: column;
         margin-left: auto;
+        align-items: baseline;       
+
     }
 &__link {   
     font-weight: 500;
@@ -63,6 +80,10 @@
     padding-top: 32px;
     padding-bottom: 32px;
     transition: fill var(--timing-function), color var(--timing-function);
+    @media screen and (max-width:1199px){
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }
 &__link:hover,
 &__link:focus {
@@ -70,8 +91,6 @@
     color: var(--btnbg-color);    
 }
 }
-
-
 .button-icon-envelope{
     margin-right: 5px;
 }
@@ -79,6 +98,7 @@
     margin-right: 10px;
 }
 .header{
+    position: relative;
     border-bottom: 1px solid var(--border-header);
 }
 .nav-link{
@@ -88,6 +108,9 @@
     padding-bottom: 32px;
     transition: color var(--timing-function);
 &.current::after {
+    @media screen and (max-width:767px){
+        display: none;
+    }
     content: '';
     position: absolute;
     left:0;
@@ -102,3 +125,4 @@
     color: var(--btnbg-color);
 }
 }
+
