@@ -49,6 +49,10 @@
     align-items: center;
     /* margin-left: 340px; */
     margin-left: auto;
+    @media screen and (min-width: 320px), (max-width:1200px) {
+        flex-wrap: wrap;
+        margin-left: auto;
+    }
 &__link {   
     font-weight: 500;
     font-size: 14px;

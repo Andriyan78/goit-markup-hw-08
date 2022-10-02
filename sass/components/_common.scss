@@ -4,8 +4,12 @@
     padding-bottom: 94px;
 }
 .do__section{
-    padding-bottom: 94px;
-}
+    @media screen and (max-width: 1200px) {
+            display: none;
+        } 
+        
+    padding-bottom: 94px;}
+
 .teamcard__title,
 .features__title {
     font-weight: 700;

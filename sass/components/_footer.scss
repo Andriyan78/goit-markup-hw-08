@@ -5,12 +5,34 @@
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;            
+            align-items: center;
+            justify-content: space-around;
+        }
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                    flex-wrap: nowrap;                    
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                    
 }
 
 .address {
     max-width: 231px;
+    @media screen and (max-width: 1200px) {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
     &__foot {
             margin-top: 20px;
         }
@@ -58,18 +80,40 @@
 }
 
 .adr {
-    margin-right: 70px;
+    @media screen and (max-width: 1200px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 53px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-right: 70px;
+        margin-bottom: 0px;
+    }
+    
 }
-
-
-
 .footmedia,
 .subscribe {
     color: var(--btnlet-color);
 }
-
+.footmedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width:768px) {
+            
+            margin-bottom: 60px;
+        }
+    @media screen and (min-width:768px){
+        margin-bottom: 60px;
+    }
+         @media screen and (min-width:1200px) {
+            margin-bottom: 0px;
+         }
+}
 .icon__foot {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 44px;
@@ -80,6 +124,7 @@
     fill: var(--btnlet-color);
     cursor: pointer;
     transition: background-color var(--timing-function);
+    margin: 5px;
 }
 
 .icon__foot:hover,
@@ -95,33 +140,39 @@
     letter-spacing: 0.03em;
     margin-bottom: 20px;
     color: var(--btnlet-color);
+    @media screen and (max-width: 1200px){
+    text-align: center;}
 }
 
 .socialmedia__foot {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 206px;
 }
-
-.subscribe {
-
-    margin-left: auto;
+.subscribe{
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;   
+            margin-left: auto;         
+        }
 }
 
-.subscription {
+.subscription {   
+    @media screen and (max-width: 1200px){
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
-&__label {
-    margin-right: 12px;
-}
-
+    }   
+         @media screen and (min-width: 1200px) {
+             display: flex;
+             justify-content: center;             
+             
+         } 
 &__input {
-    display: block;
-    max-width: 358px;
     height: 50px;
     padding-left: 16px;
     letter-spacing: 0.03em;
@@ -130,10 +181,17 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    outline: none;
+    outline: none;  
+    margin-right: 12px;
+    @media screen and (max-width: 1200px) {
+            width: 450px;
+            margin-bottom: 20px;
+        }
+    @media screen and (min-width: 1200px){
+        width: 358px;
+    }        
 }
-
-&__button {
+&__button {  
     display: flex;
     align-items: center;
     justify-content: center;
