@@ -1,7 +1,14 @@
 /* Секції */
 .team__section, .section{
+    @media screen and (min-width: 768px){
     padding-top: 94px;
     padding-bottom: 94px;
+}
+        @media screen and (max-width: 767px) {
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+
 }
 .do__section{
     @media screen and (max-width: 1200px) {
@@ -18,6 +25,7 @@
     letter-spacing: 0.03em;
     color: var(--h-color);
     margin-bottom: 10px;
+   
 }
 
 .teamcard__title {

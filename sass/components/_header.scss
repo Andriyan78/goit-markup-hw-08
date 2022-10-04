@@ -2,9 +2,27 @@
 .logo{
     color: var(--btnbg-color);
     font-family: var(--logo-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;  
+    font-weight: 700;    
+    @media screen and (max-width: 767px) {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            font-size: 24px;
+            line-height: calc(28/24);
+        }
+    
+        @media screen and (min-width: 767px) {
+            padding-top: 26px;
+            padding-bottom: 26px;
+            font-size: 24px;
+            line-height: calc(28/24);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding-top: 24px;
+            padding-bottom: 24px;
+            font-size: 26px;
+            line-height: calc(30/26);
+        }
    
 &__accent{
     color: var(--h-color)
@@ -24,11 +42,6 @@
                 top: 0;
             }
     }}
-.nav-link.logo{
-    padding-top: 24px;
-    padding-bottom: 24px;
-    
-}
 .nav{
     margin-left: 93px;
     @media screen and (max-width: 767px) {
