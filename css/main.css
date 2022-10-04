@@ -404,6 +404,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: var(--card-set-gap);
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .hero .hero__title {
