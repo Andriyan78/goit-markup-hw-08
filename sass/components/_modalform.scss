@@ -117,9 +117,8 @@
 }
 &__agreement{ 
     display: flex;  
-    align-items:flex-start;
-    justify-content: center; 
-    min-width: 346px;             
+    gap: 8px;
+             
 }
 &__icon--checked{
     opacity: 0;
