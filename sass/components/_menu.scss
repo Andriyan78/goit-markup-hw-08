@@ -80,9 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // gap: 10px;
-    margin-top: 64px;
-   
+    margin-top: 64px;   
 }
 .div-link {
         padding-right: 10px;
@@ -91,8 +89,7 @@
         }
 .div-link:last-child{
     border-right: none;
-}
-    
+}    
 .mobile-socials .link:hover,
 .mobile-socials .link:focus {
     color: var(--btnbg-color);
